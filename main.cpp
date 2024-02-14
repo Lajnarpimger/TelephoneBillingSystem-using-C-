@@ -144,22 +144,23 @@ int main() {
     TelephoneBillingSystem billingSystem;
 
     // Adding some sample call records
-    billingSystem.addCallRecord("John", "123456", "789012", 10.5);
-    billingSystem.addCallRecord("Alice", "234567", "890123", 7.2);
-    billingSystem.addCallRecord("Bob", "345678", "901234", 15.3);
-    billingSystem.addCallRecord("John", "123456", "789012", 15.7);
-    billingSystem.addCallRecord("Bob", "345678", "845234", 30.1);
+    billingSystem.addCallRecord("Benit", "9861235432", "9840321456", 10.5);
+    billingSystem.addCallRecord("Gourav", "9840340590", "9861235432", 7.2);
+    billingSystem.addCallRecord("Aashis", "9860443523", "9840340590", 15.3);
+    billingSystem.addCallRecord("Benit", "9861235432", "9861616368", 15.7);
+    billingSystem.addCallRecord("Aashis", "9860443523", "9861616368", 30.1);
 
     // Displaying call records
     billingSystem.displayCallRecords();
 
     //searching the call record of a specific user
-    billingSystem.searchCallRecords("123456");
-    billingSystem.searchCallRecords("345678");
+    billingSystem.searchCallRecords("9861235432");
+    billingSystem.searchCallRecords("9860443523");
 
     //calculating the total bill amount of some sample call records
-    billingSystem.totalBillCalculator("123456");
-    billingSystem.totalBillCalculator("345678");
+    billingSystem.totalBillCalculator("9861235432");
+    billingSystem.totalBillCalculator("9860443523");
+    billingSystem.totalBillCalculator("9840340590");
 
     return 0;
 }
